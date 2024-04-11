@@ -1,0 +1,307 @@
+
+/* Estilização do dark mode - Dark Theme */
+input[type="checkbox"]{
+    display: none;
+}
+
+.dark, /* Definição da cor do body quando o dark mode estiver ativo*/
+.dark body{
+    background-color: #000000;
+    color: #f8f3f3;
+
+}
+.bi { /* Definição das propriedades dos icones utilizados para o dark mode */
+    font-size: 1.4rem;
+    cursor: pointer;
+    color: antiquewhite;
+    position: absolute;
+    margin-top: -5%;
+    margin-left: 192%;
+    
+}
+.bi-moon{ /* permite esconder o incone da lua ( modo escuro) quando o dark mode estiver desativado*/
+    display: none;
+}
+.darkmode { /* Posição dos elementos dentro da classe darkmode, icones e texto utilizados no dark mode */
+    margin-right: 50%;
+    position: relative;
+    
+}
+.darkmode1 { /* Estilização e posicionamento da palavra Light*/
+    color: antiquewhite;
+    position: absolute;
+    margin-top: -5%;
+    margin-left: 175% ;
+    cursor: pointer;
+    
+}
+.darkmode2 { /* Estilização e posicionamento da palavra Dark*/
+    color: antiquewhite;
+    position: absolute;
+    margin-top: -5%;
+    margin-left: 175% ;
+    display: none; /* permite esconder a palavra Dark quando o dark mode estiver desativado*/
+    cursor: pointer;
+    
+}
+.dark .bi-sun { /* permite esconder o incone da luz ( modo claro) quando o dark mode estiver ativado*/
+    display: none;
+}
+.dark .bi-moon{ /* permite mostrar o incone da lua ( modo escuro) quando o dark mode estiver ativado*/
+    display: block;
+}
+.dark .darkmode1{ /* permite esconder a palavra light quando o dark mode estiver ativado*/
+    display: none;
+}
+.dark .darkmode2 { /* permite mostrar a palavra Dark quando o dark mode estiver ativado*/
+    display: block;
+}
+.dark .topic1 { /* Definição da cor do topic1 quando o dark mode estiver ativo*/
+    background-color:#0d0f29;
+    color: rgb(255, 255, 255);
+    border-radius: 30px;
+    
+}
+.dark .topic2 { /* Definição da cor do topic2 quando o dark mode estiver ativo*/
+    background-color: #18162c;
+color: rgb(4, 221, 4);
+border-radius: 30px;
+}
+.dark .topic3 { /* Definição da cor do topic3 quando o dark mode estiver ativo*/
+    background-color:#0d0f29;
+    color: rgb(255, 255, 255);
+    border-radius: 30px;
+}
+.dark .topic4 { /* Definição da cor do topic4 quando o dark mode estiver ativo*/
+    background-color: #18162c;
+color: rgb(4, 221, 4);
+border-radius: 30px;
+}
+.dark .topic5 { /* Definição da cor do topic5 quando o dark mode estiver ativo*/
+    background-color:#0d0f29;
+    color: rgb(255, 255, 255);
+    border-radius: 30px;
+}
+.dark .h301 {  /* Definição da cor de alguns titulos quando o dark mode estiver ativo*/
+    color: #f5f2f2;
+}
+.dark .h302 { /* Definição da cor de alguns titulos quando o dark mode estiver ativo*/
+    color: rgb(165, 3, 3);
+}
+.dark h3{ /* Definição da cor de alguns titulos quando o dark mode estiver ativo*/
+    color: #01b911;
+}
+body{ /* Cor do texto e do body no light mode */
+    background-color: rgb(0, 0, 0);
+    color: rgb(165, 3, 3);
+    margin: 0;
+}
+main{ /* Posicionamento dos texto e imagens dentro do main*/
+    /* Foram utilizados varios posicionamentos para permitir a estilização do site, isto é, o main é a estilização geral, sendo que para cada topico foi utilizada um posicionamento. Podemos dizer que o main posiciona os blocos e dentro de cada bloco possui mais blocos sendo posicionado*/ 
+    
+display: flex;
+justify-content: center;
+margin: auto;
+}
+
+p{ /* Estilização geral dos paragrafo */
+font-family: 'Arial' , 'Trebuchet MS' , 'sans-serif';
+font-size: 1.3em;
+font-style: normal;
+font-weight: 450;
+line-height: 1.2;
+text-align: justify;
+text-indent: 25px;
+}
+h1{ /* Estilização geral dos titulos h1 */
+font-family: 'Arial' , 'Trebuchet MS' , 'sans-serif';
+font-size: 2.5rem;
+text-align: center;
+color: rgb(3, 3, 61);
+}
+h2{ /* Estilização geral dos titulos h2 */
+font-family: 'Arial' , 'Trebuchet MS' , 'sans-serif';
+font-size: 2.0rem;
+text-align: center;
+color: rgb(165, 3, 3);
+display: flex;
+justify-content: center;
+}
+h3{ /* Estilização geral dos titulos h3 */
+font-family: 'Arial' , 'Trebuchet MS' , 'sans-serif';
+font-size: 1.5rem;
+color: rgb(0, 0, 0);
+}
+
+#first_img{ /* Posicionamento da primeira imagem*/
+display: flex;
+justify-content: space-between;
+height: 130%;
+width: 100%;
+border-radius: 30px;
+}
+.container img{ /* Posicionamento da primeira imagem*/
+display: inline-block;
+position: relative;
+display: flex;
+justify-content: space-evenly;
+height: 100%;
+width: 100%;
+object-fit: cover;  
+border-radius: 30px;  
+}
+/*  */
+.container h1{ /* Posicionamento do titulo sobre a imagem e sua estilização*/
+position: relative;
+font-size: 100px;
+color: rgb(255, 255, 255);
+text-shadow: -1px 0 rgb(255, 0, 0), 0 5px rgb(255, 0, 0),
+5px 0 rgb(255, 0, 0), 0 -1px rgb(255, 0, 0)
+
+}
+#begin{ /* Posicionamento do titulo sobre a imagem */
+    position: absolute;
+    top: 40%;
+    z-index: 1;
+}
+.video{ /* Posicionamento dos videos */
+display: flex;
+justify-content: center;
+text-align: center;
+
+}
+#video{ /* Posicionamento dos videos e arredondamento das bordas  */
+display: flex;
+max-width: 70%;
+align-items: center;
+margin: auto;
+border-radius: 20px;
+
+}
+.art{ /* Posicionamento dos texto e imagens dentro do main*/
+text-align: center;
+}
+.topic1{ /* Posicionamento dos texto e imagens dentro do topic1 e sua estilização*/
+background-color: #fafafa;
+color: rgb(12, 12, 12);
+display: flex;
+align-items: center;
+flex-wrap: wrap;
+justify-content: center;
+border-radius: 30px; /*arredondamento das bordas do background*/
+    
+}
+.topic101{ /* Tamanho maximo para o texto ocupar*/
+max-width: 50%;
+}
+.test{  /* Posicionamento dos texto dentro dos topicos*/
+display: flex;
+justify-content: center;
+}
+.text{ /* Posicionamento dos texto dentro dos topicos*/
+max-width: 80%;
+justify-content: center;
+align-content: center;
+flex-wrap: wrap;
+align-items: center;
+      
+}
+.topic102{ /* Tamanho maximo para as imagens ocupar*/
+max-width: 50%;
+}
+.test_img{ /* Posicionamento das imagens dentro dos topicos*/
+display: flex;
+flex-wrap: wrap;
+justify-content: right;
+max-width: 100%; 
+}
+.img{ /* Posicionamento das imagens dentro dos topicos*/
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+max-width: 100%; 
+}
+#img{ /* Posicionamento das imagens dentro dos topicos*/
+display: flex;
+max-width: 48%; 
+margin-top: 1%;
+margin-bottom: 1%;
+margin-right: 1%;
+border-radius: 30px;
+}
+#img:hover{ /* Permite interatividade com as imagens*/
+    opacity: 0.8;
+    transition-delay: 0.1s;
+}
+.topic2{ /* Posicionamento dos texto e imagens dentro do topic2 e sua estilização*/
+    background-color: #f5f2f2;
+    color: rgb(12, 12, 12);
+display: flex;
+align-items: center;
+flex-wrap: wrap;
+border-radius: 30px;
+}
+.topic3{ /* Posicionamento dos texto e imagens dentro do topic3 e sua estilização*/
+    background-color: #fafafa;
+    color: rgb(12, 12, 12);
+display: flex;
+align-items: center;
+flex-wrap: wrap;
+border-radius: 30px;
+}
+.topic4{ /* Posicionamento dos texto e imagens dentro do topic4 e sua estilização*/
+    background-color: #f5f2f2;
+    color: rgb(12, 12, 12);
+display: flex;
+align-items: center;
+flex-wrap: wrap;
+border-radius: 30px;
+}
+.topic5{ /* Estilização dos texto e imagens dentro do topic5*/
+    background-color: #fafafa;
+    color: rgb(12, 12, 12);
+    border-radius: 30px;
+}
+.h301{ /* Estilização dos titulos h3 cotidos nesta classe */
+    color: rgb(2, 47, 243);
+    font-size: 1.8em;
+}
+.h302{ /* Estilização dos titulos h3 cotidos nesta classe */
+    color: rgb(0, 0, 0);
+    font-size: 1.8em;
+}
+#link{ /* Estilização do texto cotidos nesta id */
+    text-decoration: none;
+    color: #01b911;
+    
+}
+#link:hover{ /* Permite interatividade com o texto no light mode*/
+    opacity: 0.8;
+    color: red;
+    text-decoration: none;
+    cursor: pointer;
+
+}
+
+footer{ /* Estilização do texto cotidos nesta classe e seu posicionamento */
+    color: #01b911;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 3%;
+}
+.dark,  /* Estilização do texto no dark mode*/
+.dark footer{
+    color: red;
+}
+.dark #link{ /* Estilização do texto no dark mode*/
+    color: red;
+}
+.dark #link:hover{ /* Permite interatividade com o texto no dark mode*/
+    opacity: 0.8;
+    color: rgb(60, 255, 0);
+    text-decoration: none;
+    cursor: pointer;
+
+}
+
+
